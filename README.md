@@ -1,5 +1,5 @@
 # Modular Multiplicative Inverse using Euclidean Algorithm.
-###### [Link to code solution] (/src/main.rs)
+###### [Link to code solution] (src/main.rs)
 
 ## What is multiplicative inverse? 
 A multiplicative inverse of a number **x** is a another number that will multiply **x** to get 1.  i.e **1/x**
