@@ -1,15 +1,15 @@
 fn main() {
     //find the modular multiplicative inverse of (3, 11)
-    let a = 3_i64;  // 3 represent in 64bits integer
-    let m = 11_i64; // 11 represent in 64bits integer
+    let a = 3_i64;  // 3 represented in 64bits integer
+    let m = 11_i64; // 11 represented in 64bits integer
 
     //function call 
     mod_inverse(a, m);
 }
 //Function that calculates modular muliplicative inverse using Euclidean algorithm
 fn mod_inverse(a: i64, m: i64) {
-    let mut x: i64 = 0;      // Initialize multable x value in 64 bit
-    let mut y: i64 = 0;     // Initialize multable y value in 64 bit
+    let mut x: i64 = 0;      // Initialize multable valuable x value in 64 bit
+    let mut y: i64 = 0;     // Initialize multable  valuable y value in 64 bit
 
     let g = gcd_extended(a, m, &mut x, &mut y);  //parse the value of a, m, x, y into the extended euclidean function
     if g != 1 {
@@ -32,8 +32,8 @@ fn mod_inverse(a: i64, m: i64) {
         return b;
     }
       
-    let mut x1 =  0;    // Initialize multable x1 value in 64 bit
-    let mut y1 =  0;    // Initialize multable y1 value in 64 bit
+    let mut x1 =  0;    // Initialize multable variable x1 value in 64 bit
+    let mut y1 =  0;    // Initialize multable variable y1 value in 64 bit
 
     // To store results of recursive call in gcd variable 
     let gcd = gcd_extended(b % a, a, &mut x1,  &mut y1);
